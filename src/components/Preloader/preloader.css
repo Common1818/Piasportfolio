@@ -1,0 +1,170 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+html .rota,
+body .rota {
+    flex-grow: 1;
+    flex-basis: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html .rota li:nth-child(1),
+body .rota li:nth-child(1) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(245, 190, 163, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.0416666667s forwards infinite;
+}
+
+html .rota li:nth-child(2),
+body .rota li:nth-child(2) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(245, 218, 163, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.0833333333s forwards infinite;
+}
+
+html .rota li:nth-child(3),
+body .rota li:nth-child(3) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(245, 245, 163, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.125s forwards infinite;
+}
+
+html .rota li:nth-child(4),
+body .rota li:nth-child(4) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(218, 245, 163, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.1666666667s forwards infinite;
+}
+
+html .rota li:nth-child(5),
+body .rota li:nth-child(5) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(190, 245, 163, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.2083333333s forwards infinite;
+}
+
+html .rota li:nth-child(6),
+body .rota li:nth-child(6) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(163, 245, 163, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.25s forwards infinite;
+}
+
+html .rota li:nth-child(7),
+body .rota li:nth-child(7) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(163, 245, 190, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.2916666667s forwards infinite;
+}
+
+html .rota li:nth-child(8),
+body .rota li:nth-child(8) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(163, 245, 218, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.3333333333s forwards infinite;
+}
+
+html .rota li:nth-child(9),
+body .rota li:nth-child(9) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(163, 245, 245, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.375s forwards infinite;
+}
+
+html .rota li:nth-child(10),
+body .rota li:nth-child(10) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(163, 218, 245, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.4166666667s forwards infinite;
+}
+
+html .rota li:nth-child(11),
+body .rota li:nth-child(11) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(163, 190, 245, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.4583333333s forwards infinite;
+}
+
+html .rota li:nth-child(12),
+body .rota li:nth-child(12) {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(163, 163, 245, 0.6);
+    transform-origin: 0% 100%;
+    animation: rotation 2s ease-in-out 0.5s forwards infinite;
+}
+
+@keyframes rotation {
+    to {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+html .rota1 li,
+body .rota1 li {
+    border-radius: 90% 0;
+}
+
+html .rota2 li,
+body .rota2 li {
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 100%;
+    background-color: transparent !important;
+}
+
+html .rota3 li,
+body .rota3 li {
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}

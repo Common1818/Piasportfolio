@@ -1,0 +1,115 @@
+.all-projects {
+    background: transparent;
+    color: black;
+    overflow-y: scroll;
+}
+
+.all-projects h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+    color: black;
+    margin: 0 0 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .all-projects h1 {
+        font-size: 3em;
+    }
+}
+
+.all-projects h2 {
+    margin: 0 0 50px;
+    font-size: 1.5em;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.all-projects aside {
+    position: fixed;
+    width: 100vw;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0.8;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 10000;
+}
+
+.all-projects aside div {
+    width: 100vw;
+    overflow-y: auto;
+}
+
+.all-projects .open {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (min-width: 600px) {
+    .all-projects nav ul li a {
+        font-size: 3em;
+    }
+}
+
+.all-projects button {
+    padding: 15px 40px;
+    background: transparent;
+    border: 1px solid #111;
+    color: #111;
+    border-radius: 8px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.all-projects button:hover {
+    border: 1px solid white;
+}
+
+.all-projects .close {
+    position: fixed;
+    top: 40px;
+    right: 60px;
+    color: white;
+    z-index: 3;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.all-projects .close span,
+.close span:before,
+.close span:after {
+    border-radius: 4px;
+    height: 5px;
+    width: 35px;
+    background: #111;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+.all-projects .close span {
+    background: #fff;
+}
+
+.all-projects .close span:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.all-projects .close span:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.all-projects .outer-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+}
